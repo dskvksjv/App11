@@ -1,0 +1,57 @@
+﻿@{
+    ViewData["Title"] = "Filter Questions";
+}
+
+<style>
+    body {
+        background-color: #FFC0CB; 
+        color: #FFFFFF; 
+    }
+
+    h2 {
+        font-weight: bold;
+        text-align: center; 
+    }
+
+    ol {
+        text-align: left; 
+    }
+
+    li {
+        margin-bottom: 20px; 
+    }
+</style>
+
+<h2>Контрольні питання</h2>
+
+<ol>
+    <li>
+        <strong>Що таке фільтр?</strong>
+        <p>Фільтр - це спеціальний клас, який дозволяє вставляти свій код до конвеєра обробки запитів та відповідей.</p>
+    </li>
+
+    <li>
+        <strong>Які фільтри бувають у MVC?</strong>
+        <p>У MVC існують такі типи фільтрів: 
+            <em>Authorization</em>, 
+            <em>Action</em>, 
+            <em>Result</em>, 
+            <em>Exception</em>,
+            <em>Global</em>.</p>
+    </li>
+
+    <li>
+        <strong>Який тип фільтра запускатиметься найпершим, якщо перед контролером або методом знаходиться кілька фільтрів?</strong>
+        <p>Найпершим запускається Global фільтр, якщо він визначений.</p>
+    </li>
+
+    <li>
+        <strong>Як створити фільтр дії?</strong>
+        <p>Створити фільтр дії можна за допомогою класу, який реалізує інтерфейс. Наприклад, IActionFilter або використовуючи атрибути дії, такий як [Authorize].</p>
+    </li>
+
+    <li>
+        <strong>Як визначається глобальний фільтр?</strong>
+        <p>Глобальний фільтр визначається в класі FilterConfig у методі RegisterGlobalFilters за допомогою GlobalFilters.Filters.Add(new SampleFilterAttribute());.</p>
+    </li>
+</ol>
